@@ -34,7 +34,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Customer>>(_customerDal.GetAll());
         }
 
-      
+
 
         public IResult Update(Customer customer)
         {
@@ -42,6 +42,6 @@ namespace Business.Concrete
             return new SuccessResult(Messages.CarUpdated);
         }
 
-       
+
     }
 }

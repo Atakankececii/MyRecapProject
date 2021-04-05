@@ -1,6 +1,7 @@
 ﻿using Entities.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Business.Constants
@@ -15,6 +16,16 @@ namespace Business.Constants
         internal static string carDeleted="Araba silindi";
 
         public static string BrandAdded = "Marka eklendi";
+        internal static string AuthorizationDenied;
+        internal static string AccessTokenCreated;
+        internal static string UserRegistered;
+        internal static Core.Entities.Concrete.User UserNotFound;
+        internal static Core.Entities.Concrete.User PasswordError;
+        internal static string SuccessfulLogin;
+        internal static string UserAlreadyExists;
+        internal static string CarImageLimitExceeded;
+        internal static string Yes;
+
         public static string BrandDeleted { get; internal set; }
         public static string BrandNameInValid { get; internal set; }
         public static string MaintenanceTime { get; internal set; }
@@ -28,5 +39,6 @@ namespace Business.Constants
         public static string UserAdded { get; internal set; }
         public static string UserDeleted { get; internal set; }
         public static string UserUpdated { get; internal set; }
+        
     }
 }

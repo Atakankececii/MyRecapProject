@@ -1,5 +1,4 @@
 ﻿using Core.DataAccess;
-
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -8,7 +7,7 @@ using System.Text;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfUserDal: EfEntityRepositoryBase<User, NorthwindContext>,IUserDal
+    public class EfCarImageDal:EfEntityRepositoryBase<CarImage,NorthwindContext>,ICarImageDal
     {
     }
 }
